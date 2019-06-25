@@ -5,16 +5,16 @@ if (isProd) {
   publicPath = process.env.BASE_URL
 }
 
-// const dayjs = require('dayjs')
-// const { version } = require('./package.json')
+const dayjs = require('dayjs')
+const { version } = require('./package.json')
 
-// const revision = require('child_process')
-//   .execSync('git describe --always')
-//   .toString()
-//   .trim()
+const revision = require('child_process')
+  .execSync('git describe --always')
+  .toString()
+  .trim()
 
-// process.env.VUE_APP_VERSION = `${version}-${revision}`
-// process.env.VUE_APP_RELEASE_DATE = `${dayjs().format('YYYY-MM-DD HH:mm:ss')}`
+process.env.VUE_APP_VERSION = `${version}-${revision}`
+process.env.VUE_APP_RELEASE_DATE = `${dayjs().format('YYYY-MM-DD HH:mm:ss')}`
 
 module.exports = {
   // 基本路径
