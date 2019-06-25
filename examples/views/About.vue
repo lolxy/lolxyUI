@@ -8,8 +8,8 @@
 
 <script>
 import Vue from 'vue'
-import hTest from '../../components/hTest'
-import hButton from '../../components/hButton'
+import hTest from '../../packages/hTest'
+import hButton from '../../packages/hButton'
 
 export default {
   components: {
