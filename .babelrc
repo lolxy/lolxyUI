@@ -1,0 +1,11 @@
+{
+  "plugins": [
+    [
+      "component",
+      {
+        "libraryName": "hjyui",
+        "libDir": "components"
+      }
+    ]
+  ]
+}
